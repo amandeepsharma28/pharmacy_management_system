@@ -1,0 +1,7 @@
+com\example\demo\UserManagmentServiceApplication.class
+com\ums\service\UserService.class
+com\ums\dto\UserData.class
+com\ums\model\Role.class
+com\ums\model\User.class
+com\ums\dao\UserRepository.class
+com\ums\controller\UserController.class
