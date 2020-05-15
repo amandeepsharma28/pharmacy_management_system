@@ -1,18 +1,29 @@
 # pharmacy_management_system
-Pharmacy Management System
--Pharmacy Management System is a web/mobile application to manage an online pharmacy store. The application helps pharmacists to sell drugs, consult the available stocks of drugs, add new products, and send orders to suppliers.
+##Product Overview
 
--include all the CRUD operations for products, users, and orders.
+Pharmacy Management System is a web/mobile application to manage an online pharmacy store. The application helps pharmacists to sell drugs, consult the available stocks of drugs, add new products and send orders to suppliers. The application must also make it possible to determine the money collected by the pharmacy over a given period. Apart from this, the application will also allow staff to manage who is the pharmacist or the person who sold the drug and an alert mechanism for the management of best-selling products will be implemented.
 
--has three users: Admin, Stock Manager, Pharmacist.
+##Scope
 
--Admin handles the CRUD operations for Users, and he/she has all the privileges.
+The Pharmacy Management System will be accessible from both web and mobile interface. 
 
--Stock Manager is the one who can manage the products and place purchase orders with the suppliers
+##ARCHITECTURE
 
--Pharmacist can search for the product and place the sales order for the customer.
+The architecture of pharmacy management system includes mainly 3 parts as listed below
+-Web Front End
+-Mobile Application
+-A Rest API
 
-Languages And Technologies Used
+From the Web/Mobile, a request is generated and send to the Rest API to do a specific task. Once the proxy server in Rest API receives the request it call the respective micro service. Following are the micro services in the API
+-User Management System
+-Product Management System
+-Sales Management System
+-Purchase Management System 
+-Supplier Management System
+
+This micro services communicate with the database and once the task is completed, the  appropriate response will be send back to the proxy server and from there response is send back and rendered in Web/Mobile UI.
+
+##Languages And Technologies Used
 -Spring Boot
 
 -React.js
