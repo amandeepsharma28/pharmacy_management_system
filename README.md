@@ -1,43 +1,39 @@
-# pharmacy_management_system
-##Product Overview
+# Pharmacy Management System
 
-Pharmacy Management System is a web/mobile application to manage an online pharmacy store. The application helps pharmacists to sell drugs, consult the available stocks of drugs, add new products and send orders to suppliers. The application must also make it possible to determine the money collected by the pharmacy over a given period. Apart from this, the application will also allow staff to manage who is the pharmacist or the person who sold the drug and an alert mechanism for the management of best-selling products will be implemented.
+## React.js, Spring Boot, Kotlin, BootStrap, Material-UI, MySQL
 
-##Scope
+-Pharmacy Management System is a web/mobile application to manage an online pharmacy store. The application helps pharmacists to sell drugs, consult the available stocks of drugs, add new products, and send orders to suppliers.
 
-The Pharmacy Management System will be accessible from both web and mobile interface. 
+-include all the CRUD operations for products, users, and orders.
 
-##ARCHITECTURE
+-has three users: Admin, Stock Manager, Pharmacist.
 
-The architecture of pharmacy management system includes mainly 3 parts as listed below
--Web Front End
--Mobile Application
--A Rest API
+-Admin handles the CRUD operations for Users, and he/she has all the privileges.
 
-From the Web/Mobile, a request is generated and send to the Rest API to do a specific task. Once the proxy server in Rest API receives the request it call the respective micro service. Following are the micro services in the API
--User Management System
--Product Management System
--Sales Management System
--Purchase Management System 
--Supplier Management System
+-Stock Manager is the one who can manage the products and place purchase orders with the suppliers
 
-This micro services communicate with the database and once the task is completed, the  appropriate response will be send back to the proxy server and from there response is send back and rendered in Web/Mobile UI.
+-Pharmacist can search for the product and place the sales order for the customer.
 
-##Languages And Technologies Used
--Spring Boot
+-Front end of this system is developed with React.js, BootStrap and Material-UI.
 
--React.js
+-Restful APIs of Pharmacy Management System is developed with Spring Boot and MySQL Workbench is used to store the required information.
 
--MySQL
+-Kotlin is used to develop the mobile application for this system.
 
--Bootstrap
+## What I Did
+-This Project was developed by the team of ten members.
 
--HTML5
+-Team was divided into three sub teams: Android team, Front-end Team, Back-end Team
 
--CSS3
+-I was the Part of Backend team. So, I developed the two microservices, Sales micro service and product microservice, with spring boot
 
--Material-ui
+-As, I was the team leader of this project.So, I also worked with front end to integerate the system.
 
--JavaScript
+-helped in designing the database for the system.
 
--Kotlin
+## Team
+-Android Team: Harikrishna Sabu, Prabhjeet Singh, Rajanbir Singh
+
+-Front End Team: Savieo, Gursharan Kaur, Bansari Parekh, Sukhwinder Kaur
+
+-Back End Team: Amal Vijay, Krupali Kumari, Amandeep Sharma
